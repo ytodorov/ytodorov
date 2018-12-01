@@ -15,6 +15,9 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+
+    <script src="http://www.atmrum.net/rum.js"></script>
+    <script>rum.start("32ac4d174936ef5883b0b3196d494370");</script>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -70,5 +73,7 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+       
+    
 </body>
 </html>
