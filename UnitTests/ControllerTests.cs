@@ -1,5 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Support.UI;
 using System;
+using System.IO;
+using System.Reflection;
 using Xunit;
 using ytodorov.Controllers;
 
@@ -8,7 +14,7 @@ namespace UnitTests
     public class ControllerTests
     {
         [Fact]
-        public void Home()
+        public void HomeTest()
         {
             HomeController controller = new HomeController();
             var res = controller.Index() as ViewResult;
@@ -17,6 +23,15 @@ namespace UnitTests
 
             Assert.True(resFromViewModel == 1, $"1 не е равно на {resFromViewModel}");
 
+        }
+
+        [Fact]
+        public void SeleniumTest()
+        {
+            using (var driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
+            {
+                driver.Navigate().GoToUrl(@"https://github.com/dotnet/cli/issues/3136");
+            }
         }
     }
 }
