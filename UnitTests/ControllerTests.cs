@@ -15,7 +15,7 @@ namespace UnitTests
 
             var resFromViewModel = (int)res.ViewData["test"];
 
-            Assert.Equal<int>(resFromViewModel, 1);
+            Assert.True(resFromViewModel == 1, $"1 не е равно на {resFromViewModel}");
 
         }
     }
