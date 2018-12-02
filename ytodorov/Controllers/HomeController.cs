@@ -12,7 +12,10 @@ namespace ytodorov.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var view = View();
+            view.ViewData.Add("test", 1);
+
+            return view;
         }
 
         public IActionResult About()
