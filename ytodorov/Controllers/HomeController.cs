@@ -38,6 +38,12 @@ namespace ytodorov.Controllers
             return View();
         }
 
+        public IActionResult Map()
+        {
+
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

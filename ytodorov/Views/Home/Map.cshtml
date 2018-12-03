@@ -1,0 +1,52 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="https://demos.telerik.com/kendo-ui/map/bing">
+    <style>
+        html {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title></title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.silver.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.silver.mobile.min.css" />
+
+    <script src="https://kendo.cdn.telerik.com/2018.3.1017/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.3.1017/js/kendo.all.min.js"></script>
+
+
+</head>
+<body>
+    <div id="example">
+
+        <div id="map"></div>
+
+        <script>
+            function createMap() {
+                $("#map").kendoMap({
+                    center: [51.505, -0.09],
+                    zoom: 3,
+                    layers: [{
+                        type: "bing",
+                        imagerySet: "aerialWithLabels",
+
+                        // IMPORTANT: This key is locked to demos.telerik.com
+                        // Please replace with your own Bing Key
+                        key: "AqaPuZWytKRUA8Nm5nqvXHWGL8BDCXvK8onCl2PkC581Zp3T_fYAQBiwIphJbRAK"
+                    }]
+                });
+            }
+
+            $(document).ready(createMap);
+        </script>
+    </div>
+
+
+</body>
+</html>
