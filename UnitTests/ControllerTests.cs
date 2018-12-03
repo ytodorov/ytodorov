@@ -30,7 +30,7 @@ namespace UnitTests
         {
             using (var driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
             {
-                driver.Navigate().GoToUrl(@"https://github.com/dotnet/cli/issues/3136");
+                driver.Navigate().GoToUrl(@"https://www.google.com");
             }
         }
     }
