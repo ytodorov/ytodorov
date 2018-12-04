@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\.well-known\pki-validation\F7827F4ACF110D1E0A0C3F8498A38406.txt">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\F7827F4ACF110D1E0A0C3F8498A38406.txt" />
   </ItemGroup>
 
