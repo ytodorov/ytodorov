@@ -37,6 +37,7 @@ namespace ytodorov
             services.AddHttpsRedirection(options =>
             {
                 options.HttpsPort = 443;
+                options.RedirectStatusCode = 302;
             });
         }
 
