@@ -16,7 +16,12 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 
-
+    <script type="text/javascript">
+    //<![CDATA[
+        var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.comodo.com/" : "http://www.trustlogo.com/");
+        document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+        //]]>
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -75,9 +80,6 @@
 
     @RenderSection("Scripts", required: false)
 
-   
-    @*<script src="https://www.atmrum.net/rum.js"></script>*@
-
     <script>
         setTimeout(function () {
 
@@ -85,13 +87,11 @@
 
             rum.start("32ac4d174936ef5883b0b3196d494370");
         }, 3000);
-
-
-
-        
     </script>
-
-    @*<script defer>rum.start("32ac4d174936ef5883b0b3196d494370");</script>*@
+    <script language="JavaScript" type="text/javascript">
+        TrustLogo("https://www.ytodorov.com/images/comodo_secure_seal_76x26_transp.png", "CL1", "none");
+    </script>
+    <a href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>
 </body>
 
 </html>
