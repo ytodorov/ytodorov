@@ -76,7 +76,12 @@
     @RenderSection("Scripts", required: false)
 
    
-    <script defer src="https://www.atmrum.net/rum.js"></script>
+    @*<script src="https://www.atmrum.net/rum.js"></script>*@
+
+    <script>
+        var rum = function () { function t(t) { if (t && 32 === t.trim().length) { var n = ["www.atmrum.net/conf/v1/atm/fpconfig.min.json"], m = document.createElement("script"); m.src = "//www.atmrum.net/client/v1/atm/fpv2.min.js", m.onload = function () { Footprint.start("atm", n, 5, t) }, document.body.appendChild(m) } } return { start: t } }();
+    </script>
+
     <script defer>rum.start("32ac4d174936ef5883b0b3196d494370");</script>
 </body>
 
