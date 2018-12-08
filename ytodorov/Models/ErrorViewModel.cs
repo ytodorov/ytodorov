@@ -1,5 +1,3 @@
-using System;
-
 namespace ytodorov.Models
 {
     public class ErrorViewModel
