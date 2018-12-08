@@ -30,13 +30,16 @@ namespace ytodorov.Controllers
 
         public IActionResult Chat()
         {
-
             return View();
         }
 
         public IActionResult Map()
         {
+            return View();
+        }
 
+        public IActionResult AzureCosmosDb()
+        {
             return View();
         }
 
