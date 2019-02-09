@@ -21,13 +21,13 @@ namespace UnitTests
 
         }
 
-        [Fact]
-        public void SeleniumTest()
-        {
-            using (var driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
-            {
-                driver.Navigate().GoToUrl(@"https://www.google.com");
-            }
-        }
+        //[Fact]
+        //public void SeleniumTest()
+        //{
+        //    using (var driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
+        //    {
+        //        driver.Navigate().GoToUrl(@"https://www.google.com");
+        //    }
+        //}
     }
 }
