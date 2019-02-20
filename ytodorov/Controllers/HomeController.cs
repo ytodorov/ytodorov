@@ -8,7 +8,7 @@ namespace ytodorov.Controllers
     {
         public IActionResult Index()
         {
-            var view = View();
+            var view = View(); 
             view.ViewData.Add("test", 1);
 
             return view;
