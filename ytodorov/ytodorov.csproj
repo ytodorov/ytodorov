@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <UserSecretsId>801b1ab1-bd2e-4345-a26a-2302eb17d18e</UserSecretsId>
   </PropertyGroup>
 

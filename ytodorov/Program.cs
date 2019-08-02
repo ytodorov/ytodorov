@@ -12,6 +12,7 @@ namespace ytodorov
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                //.UseEnvironment("Test")
                 .UseStartup<Startup>();
     }
 }
