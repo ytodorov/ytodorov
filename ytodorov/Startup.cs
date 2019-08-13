@@ -38,11 +38,11 @@ namespace ytodorov
 
             //services.AddSingleton<IDocumentDBRepository<Item>>(new DocumentDBRepository<Item>());
 
-            services.AddHttpsRedirection(options =>
-            {
-                options.HttpsPort = 443;
-                options.RedirectStatusCode = 302;
-            });
+            //services.AddHttpsRedirection(options =>
+            //{
+            //    options.HttpsPort = 443;
+            //    options.RedirectStatusCode = 302;
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,12 +55,12 @@ namespace ytodorov
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
+                //app.UseHsts();
             }
-            if (!env.IsDevelopment())
-            {
-                app.UseHttpsRedirection();
-            }
+            //if (!env.IsDevelopment())
+            //{
+                //app.UseHttpsRedirection();
+            //}
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
