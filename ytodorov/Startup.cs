@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Rewrite;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ytodorov.Models;
@@ -43,6 +44,8 @@ namespace ytodorov
             //    options.HttpsPort = 443;
             //    options.RedirectStatusCode = 302;
             //});
+            
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,8 +62,12 @@ namespace ytodorov
             }
             //if (!env.IsDevelopment())
             //{
-                //app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             //}
+
+            app.UseRewriter(new RewriteOptions().AddRedirectToWww());
+
+
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
