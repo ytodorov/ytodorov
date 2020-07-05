@@ -26,5 +26,11 @@ namespace ytodorov.Controllers
         {
             return View();
         }
+
+        [Route("disqus")]
+        public IActionResult Disqus()
+        {
+            return View();
+        }
     }
 }
