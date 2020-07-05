@@ -1,27 +1,26 @@
 ﻿<div id="disqus_thread"></div>
 <script>
-window.addEventListener('message', receiveMessage, false);
-function receiveMessage(event)
-{
-    if (event.data) {
-        var msg;
-        try {
-            msg = JSON.parse(event.data);
-        } catch (err) {
-            // Do nothing
-        }
-        if (!msg)
-            return false;
+    window.addEventListener('message', receiveMessage, false);
+    function receiveMessage(event) {
+        if (event.data) {
+            var msg;
+            try {
+                msg = JSON.parse(event.data);
+            } catch (err) {
+                // Do nothing
+            }
+            if (!msg)
+                return false;
 
-        if (msg.name === 'resize' || msg.name === 'rendered') {
-            window.parent.postMessage({
-              sentinel: 'amp',
-              type: 'embed-size',
-              height: msg.data.height
-            }, '*');
+            if (msg.name === 'resize' || msg.name === 'rendered') {
+                window.parent.postMessage({
+                    sentinel: 'amp',
+                    type: 'embed-size',
+                    height: msg.data.height
+                }, '*');
+            }
         }
     }
-}
 </script>
 <script>
     /**
@@ -32,7 +31,7 @@ function receiveMessage(event)
         this.page.url = window.location;  // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = window.location.hash; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
-    (function() {  // DON'T EDIT BELOW THIS LINE
+    (function () {  // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
 
         s.src = '//exam-answer.disqus.com/embed.js';
@@ -40,7 +39,8 @@ function receiveMessage(event)
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
-
+</script>
+<script>
     setInterval(function () {
         var share = document.getElementById("thread-share-bar");
         if (share != null) {
