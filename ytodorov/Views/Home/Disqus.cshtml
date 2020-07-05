@@ -40,4 +40,17 @@ function receiveMessage(event)
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
+
+    setInterval(function () {
+        var share = document.getElementById("thread-share-bar");
+        if (share != null) {
+            share.remove();
+        }
+
+        var elements = document.getElementsByClassName("install");
+        if (elements.length > 0) {
+            elements[0].remove();
+        }
+
+    }, 300);
 </script>
