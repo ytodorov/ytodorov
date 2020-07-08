@@ -32,5 +32,11 @@ namespace ytodorov.Controllers
         {
             return View();
         }
+
+        [Route("likebtn")]
+        public IActionResult LikeBtn()
+        {
+            return View();
+        }
     }
 }
