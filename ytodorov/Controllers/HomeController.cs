@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using ytodorov.Models;
 
 namespace ytodorov.Controllers
 {
@@ -28,9 +29,13 @@ namespace ytodorov.Controllers
         }
 
         [Route("disqus")]
-        public IActionResult Disqus()
+        public IActionResult Disqus(string canonicalUrl)
         {
-            return View();
+            DisqusViewModel disqusViewModel = new DisqusViewModel()
+            {
+                CanonicalUrl = canonicalUrl
+            };
+            return View(disqusViewModel);
         }
 
         [Route("likebtn")]

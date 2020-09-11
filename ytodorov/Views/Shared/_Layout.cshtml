@@ -3,95 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yordan Todorov's site</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    @*<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43988280-8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-43988280-8');
-    </script>
-
-    <script>ga('require', 'GTM-TH3BC3D');</script>
-
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-43988280-8', 'auto');
-        ga('require', 'GTM-TH3BC3D');
-        ga('send', 'pageview');
-    </script>
-    <style>
-        .async-hide {
-            opacity: 0 !important
-        }
-    </style>
-
-    <script>
-        (function (a, s, y, n, c, h, i, d, e) {
-            s.className += ' ' + y; h.start = 1 * new Date;
-            h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
-            (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
-        })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
-            { 'GTM-TH3BC3D': true });</script>*@
-
-
+    <title>https://www.exam-answer.com/</title>
     <style>
         html {
             font-size: 14px;
             font-family: Arial, Helvetica, sans-serif;
         }
     </style>
-    <title></title>
-    @*<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.common.min.css" />
-    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.uniform.min.css" />
-    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.3.1017/styles/kendo.uniform.mobile.min.css" />
-
-    <script src="https://kendo.cdn.telerik.com/2018.3.1017/js/jquery.min.js"></script>
-    <script src="https://kendo.cdn.telerik.com/2018.3.1017/js/kendo.all.min.js"></script>*@
-
-    <link rel="shortcut icon" type="image/png" href="~/images/me.jpg" />
-
-    @*<script type="text/javascript">
-        //<![CDATA[
-        var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.comodo.com/" : "http://www.trustlogo.com/");
-        document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
-        //]]>
-    </script>*@
+    <link rel="shortcut icon" type="image/png" href="~/images/favicon.ico" />  
 </head>
-<body>
-    @*<partial name="_CookieConsentPartial" />*@
-
-    @*<div class="container body-content">*@  
-             
-        @RenderBody()
-        @*<hr />
-        <footer>
-            <p>&copy; Copyright @DateTime.Now.Year <a href="https://www.linkedin.com/in/yordantodorov/">Yordan Todorov</a></p>
-        </footer>*@
-    @*</div>*@
-
-    @*@RenderSection("Scripts", required: false)*@
-
-    @*<script>
-        setTimeout(function () {
-
-            var rum = function () { function t(t) { if (t && 32 === t.trim().length) { var n = ["www.atmrum.net/conf/v1/atm/fpconfig.min.json"], m = document.createElement("script"); m.src = "//www.atmrum.net/client/v1/atm/fpv2.min.js", m.onload = function () { Footprint.start("atm", n, 5, t) }, document.body.appendChild(m) } } return { start: t } }();
-
-            rum.start("32ac4d174936ef5883b0b3196d494370");
-        }, 3000);
-    </script>
-    <script language="JavaScript" type="text/javascript">
-        TrustLogo("https://www.ytodorov.com/images/comodo_secure_seal_76x26_transp.png", "CL1", "none");
-    </script>
-    <a href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>*@
+<body>  
+        @RenderBody()       
 </body>
 
 </html>
