@@ -43,5 +43,16 @@ namespace ytodorov.Controllers
         {
             return View();
         }
+
+        [Route("lbu")]
+        public IActionResult LikeBtnUltra(string di)
+        {
+            string dataidentifier = di;
+            if (string.IsNullOrWhiteSpace(dataidentifier))
+            {
+                dataidentifier = "dataidentifier";
+            }
+            return View((object)dataidentifier);
+        }
     }
 }
