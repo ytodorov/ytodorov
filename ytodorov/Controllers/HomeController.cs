@@ -28,6 +28,11 @@ namespace ytodorov.Controllers
             return View();
         }
 
+        public IActionResult Kmp()
+        {
+            return View();
+        }
+
         [Route("disqus")]
         public IActionResult Disqus(string canonicalUrl)
         {
